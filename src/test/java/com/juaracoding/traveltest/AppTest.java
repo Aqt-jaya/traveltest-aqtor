@@ -102,12 +102,12 @@ public class AppTest {
         String expected1 = "https://demo.guru99.com/test/newtours/register_sucess.php";
         Assert.assertEquals(actual1, expected1);
 
-        // validate pesan greetings
+        // validate pesan registerasi berhasil
         String actual2 = driver.findElement(By.xpath("//b[contains(text(),' Dear ')]")).getText();
         String expected2 = "Dear nailul aqtor,";
         Assert.assertEquals(actual2, expected2);
 
-        // validate pesan username
+        // validate pesan user name
         String actual3 = driver.findElement(By.xpath("//b[contains(text(),' Note: Your user name is ')]")).getText();
         String expected3 = "Note: Your user name is nailul.";
         Assert.assertEquals(actual3, expected3);
